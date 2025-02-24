@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 import styles from "./RootLayout.module.css";
-import MenuItems from "../components/menuItems";
 import { useState } from "react";
 import { IoMdHome } from "react-icons/io";
 import { FaBell, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import DashboardDisplay from "../displays/dashboard/DashboardDisplay";
+import ItemsMenu from "../components/itemsmenu/ItemsMenu";
 
 export default function RootLayout() {
   const [header, setHeader] = useState({
@@ -25,7 +25,7 @@ export default function RootLayout() {
         <div
           className={`${styles.sideBoard} ${sidebarOpen ? styles.open : ""}`}
         >
-          <MenuItems />
+          <ItemsMenu />
           {sidebarOpen && (
             <button className={styles.closeButton} onClick={toggleSidebar}>
               <FaTimes />

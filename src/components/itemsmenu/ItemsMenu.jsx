@@ -1,4 +1,4 @@
-import styles from "./MenuItems.module.css";
+import styles from "./ItemsMenu.module.css";
 import {
   FaArrowAltCircleLeft,
   FaHome,
@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 let logo = "./images/logo.png";
 let card = "./images/card.png";
 
-export default function MenuItems() {
+export default function ItemsMenu() {
   return (
     <div className={`${styles.sidebar} d-flex flex-column`}>
       <div className={styles.logoDiv}>
