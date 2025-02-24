@@ -1,0 +1,50 @@
+.card-request-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-request-title {
+  font-size: 24px;
+  font-weight: bold;
+  /* color: #343a40; */
+}
+
+.card-request-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.card-request-table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-request-table th,
+.card-request-table td {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #343a40;
+}
+
+.card-request-table .thead-dark th {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.card-request-table .badge-success {
+  background-color: #28a745;
+}
+
+.card-request-table .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media only screen and (max-width: 768px) {
+  .tab-div {
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,52 @@
+.space {
+  width: 100%;
+  background-color: #f8fbff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.space div {
+  border-radius: 5px;
+}
+
+.monthly {
+  width: 100%;
+
+  border: 1px solid black;
+}
+
+.cardStatus {
+  transform: translateY(-25px);
+}
+
+.cardReq {
+  width: 1005;
+}
+
+@media (max-width: 768px) {
+  .space {
+    width: 100%;
+    background-color: #f8fbff;
+  }
+
+  .space div {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .monthly {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+
+  .cardStatus {
+    transform: translateY(-2px);
+    box-sizing: content-box;
+  }
+
+  .cardReq {
+    width: 100%;
+    overflow-x: scroll;
+  }
+}

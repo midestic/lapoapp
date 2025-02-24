@@ -1,0 +1,153 @@
+.rootLayout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.dashboard {
+  display: flex;
+  flex: 1;
+  border: 1px solid rgb(186, 179, 179);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  position: sticky;
+}
+
+.sideBoard {
+  vertical-align: top;
+  border-right: 1px solid rgb(186, 179, 179);
+  display: inline-block;
+  width: 250px;
+  height: 100%; /* Ensure full height */
+  transition: transform 0.3s ease;
+}
+
+.sideBoard.open {
+  transform: translateX(0);
+}
+
+.boardHeader {
+  border: none;
+  border-bottom: 1px solid rgb(186, 179, 179);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #f1f7ff;
+}
+
+.infoBox {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoBox small {
+  padding-left: 20px;
+  margin: auto;
+}
+
+.boardHeader div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boardHeader input {
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 5px;
+  width: 20%;
+}
+
+.displayBox {
+  background-color: #f8fbff;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.rightBoard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: 0;
+}
+
+.toggleButton {
+  display: none;
+}
+
+.closeButton {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .boardHeader {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .infoBox {
+    /* border: 1px solid; */
+    width: 50%;
+  }
+  .homeDash {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(-10px);
+  }
+
+  .sideBoard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 1000;
+    background-color: white;
+    position: fixed;
+  }
+
+  .sideBoard.open {
+    transform: translateX(0);
+  }
+
+  .rightBoard {
+    width: 100%;
+  }
+
+  .boardHeader input {
+    width: 80%;
+  }
+
+  .toggleButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

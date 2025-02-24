@@ -1,0 +1,69 @@
+.dashDisplayComp {
+  /* border: 1px solid pink; */
+  width: 100%;
+}
+
+.dashDisplay {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.dashDisplayHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calender {
+  margin: auto;
+  width: 15%;
+
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid gray;
+  padding: 4px;
+  margin-right: 2%;
+}
+.todayDate {
+  border-left: 1px solid gray;
+  padding: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashDisplayComp {
+    /* border: 1px solid pink; */
+    width: 100%;
+  }
+
+  .dashDisplay {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .dashDisplayHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashDisplayHeader h5 {
+    font-size: 1em;
+  }
+
+  .calender {
+    margin: auto;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid gray;
+    /* padding: 4px; */
+    margin-right: 2%;
+  }
+
+  .calender small {
+    font-size: 9px;
+  }
+  .todayDate {
+    border-left: 1px solid gray;
+    padding: 4px;
+  }
+}

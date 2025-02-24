@@ -1,0 +1,105 @@
+.createProfileContainer {
+  background-color: rgb(248, 251, 255);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.createProfileContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.createProfileContainer p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.profileDetails {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+.divTwo,
+.divOne {
+  width: 100%;
+
+  padding: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.formGroup label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.feesSection {
+  margin-top: 20px;
+}
+
+.feesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.addFeeBtn {
+  padding: 10px 20px;
+  background-color: rgb(1, 77, 175);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.createProfileBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(1, 77, 175);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f1f7ff;
+}
+
+.cBtnDiv {
+  width: 30%;
+  float: right;
+}

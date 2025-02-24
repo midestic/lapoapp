@@ -1,0 +1,35 @@
+.quickAccessComp {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 39px;
+  margin-right: 39px;
+}
+
+.iconCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #014daf;
+  color: white;
+}
+
+.wrapper {
+  /* border: 1px solid #c4c4c4; */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.col {
+  background-color: #e3ecf7;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2px;
+}
+
+.col small {
+  margin: auto;
+}

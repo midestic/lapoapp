@@ -1,0 +1,77 @@
+.cardRequestContainer {
+  background-color: rgb(248, 251, 255);
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cardRequestContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.cardRequestContainer p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.searchDiv {
+  width: 30%;
+}
+
+.searchCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.addProfileButton {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.addProfileButton small {
+  margin-left: 5px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.cardTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cardTable th,
+.cardTable td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.cardTable th {
+  background-color: #f1f7ff;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 18px;
+}

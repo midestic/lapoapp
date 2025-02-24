@@ -1,0 +1,13 @@
+.tableCont {
+  padding: 20px;
+}
+
+.noVerticalBorders th,
+.noVerticalBorders td {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.tableHeading {
+  background-color: #4a72a7;
+}
