@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./CreateProfile.module.css"; // Import the CSS module
-import AddFeeModal from "../addFee/AddfeeModal";
+
+import AddFee from "../addFee/AddFee";
 
 const CreateProfile = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -61,7 +62,7 @@ const CreateProfile = () => {
         </div>{" "}
       </div>
       {/* Fees Section */}
-      <AddFeeModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <AddFee isOpen={modalOpen} onClose={() => setModalOpen(false)} />
       <div className={styles.feesSection}>
         <div className={styles.feesHeader}>
           <h3>Fees</h3>

@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "react-modal";
 import "./AddFeeModal.css"; // Import the CSS file
 
-export default function AddFeeModal({ isOpen, onClose }) {
+export default function AddFee({ isOpen, onClose }) {
   return (
     <Modal
       isOpen={isOpen}
