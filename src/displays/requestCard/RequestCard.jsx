@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./CardRequest.css"; // Import custom CSS for additional styling
+import "./RequestCard.css";
 
-export default function CardRequest() {
+export default function RequestCard() {
   return (
     <div className="container mt-4 card-request-container">
       <div className="mb-3">
