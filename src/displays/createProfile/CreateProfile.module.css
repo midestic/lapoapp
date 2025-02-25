@@ -2,6 +2,8 @@
   background-color: rgb(248, 251, 255);
   padding: 20px;
   border-radius: 8px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .createProfileContainer h2 {
@@ -102,4 +104,11 @@
 .cBtnDiv {
   width: 30%;
   float: right;
+}
+
+@media (max-width: 768px) {
+  .tableDiv {
+    width: 100%;
+    overflow-x: scroll;
+  }
 }

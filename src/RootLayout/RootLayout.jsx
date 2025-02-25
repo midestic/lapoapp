@@ -12,7 +12,6 @@ export default function RootLayout() {
     text: "Dashboard",
   });
 
-  const [display, setDisplay] = useState(<DashboardDisplay />);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -25,7 +24,7 @@ export default function RootLayout() {
         <div
           className={`${styles.sideBoard} ${sidebarOpen ? styles.open : ""}`}
         >
-          <ItemsMenu />
+          <ItemsMenu toggleSidebar={toggleSidebar} />
           {sidebarOpen && (
             <button className={styles.closeButton} onClick={toggleSidebar}>
               <FaTimes />

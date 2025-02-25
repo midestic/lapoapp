@@ -20,14 +20,14 @@ import { NavLink } from "react-router-dom";
 let logo = "./images/logo.png";
 let card = "./images/card.png";
 
-export default function ItemsMenu() {
+export default function ItemsMenu({ toggleSidebar }) {
   return (
     <div className={`${styles.sidebar} d-flex flex-column`}>
       <div className={styles.logoDiv}>
         <img className={styles.logo} src={logo} alt="lapo" />
       </div>
       <NavLink to="/" className={styles.navLink}>
-        <div className={styles.dash}>
+        <div onClick={toggleSidebar} className={styles.dash}>
           <small>
             <FaHome /> Dashboard
           </small>
@@ -57,20 +57,16 @@ export default function ItemsMenu() {
             <FaIdCard color="gray" /> Scheme
           </p>
         </div>
-        <NavLink to="cardprofile" className={styles.navLink}>
-          <div>
-            <small>
-              <IoMdCard color="gray" /> Card Profile
-            </small>
-          </div>
-        </NavLink>
-        <NavLink to="cardrequest" className={styles.navLink}>
-          <div>
-            <small>
-              <IoMdCalendar color="gray" /> Card Request
-            </small>
-          </div>
-        </NavLink>
+        <div onClick={toggleSidebar}>
+          <NavLink to="cardprofile" className={styles.navLink}>
+            <IoMdCard color="gray" /> Card Profile
+          </NavLink>
+        </div>
+        <div onClick={toggleSidebar}>
+          <NavLink to="cardrequest" className={styles.navLink}>
+            <IoMdCalendar color="gray" /> Card Request
+          </NavLink>
+        </div>
         <div>
           <p>
             <IoMdToday color="gray" /> Stock

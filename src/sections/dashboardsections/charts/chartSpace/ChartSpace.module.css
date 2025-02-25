@@ -15,13 +15,16 @@
   border: 1px solid black;
 }
 
+.weekly {
+  height: fit-content;
+}
+
 .cardStatus {
   transform: translateY(-75px);
 }
 
-.cardReq {
-  width: 1005;
-}
+/* .cardReq {
+} */
 
 @media (max-width: 768px) {
   .space {
